@@ -1,0 +1,47 @@
+header {
+    background-color: #0B1C51;
+}
+
+header h1 {
+    font-size: 48px;
+    color: #fff;
+    text-align: center;
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li a {
+    font-family: Montserrat;
+    color: #fff;
+    text-decoration: none;
+    margin: 0 20px 0 0;
+}
+header nav ul li:last-child a {
+    margin-right: 0;
+  }
+
+
+@media all and (min-width: 600px) {
+    header {
+         /* Changes the default setting from `block` to `flex`. */
+      display: flex;
+      /* Pushes the items (the title and nav) to the far sides of the 
+         browser with space between them. */
+      justify-content: space-between;
+      /* Adds 0 pixels padding top and bottom, and 30 pixels padding 
+         left and right. */
+      padding: 0 30px;
+    }
+    header h1 {
+        font-size: 52px;
+    }
+}
